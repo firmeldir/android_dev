@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <FrameLayout
+        android:id="@+id/big_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Large.Inverse"/>
+
+        <ImageView
+            android:id="@+id/cam_image"
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:background="#999"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/city_nn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp"
+        android:text=""
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/time_nn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city_nn"
+        android:layout_margin="18dp"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/name_nn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_nn"
+        android:layout_margin="18dp"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textSize="30sp"
+        />
+
+    <!-- Добавьте сюда еще View с информацией о выбранном городе и показанной веб-камеры -->
+
+</RelativeLayout>
